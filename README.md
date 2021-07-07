@@ -19,7 +19,7 @@
 
 ## HTML, 기본구조
 
-'(backtick)
+`(backtick)
 
 ----
 <!DOCTYPE html>
