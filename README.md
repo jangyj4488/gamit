@@ -21,13 +21,13 @@
 
 `(backtick)
 
-----
+```
 <!DOCTYPE html>
 <html>
   <head></head>
   <body></ody>
 </html>
-----
+```
 
 
 - DOCTYPE : html문서 타입
