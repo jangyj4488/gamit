@@ -100,7 +100,7 @@
 
 > url(Uniform Resource locator) : 이동하고자하는 목적지의 위치/경로 값
 
-### Table Element(http://)
+### Table Element(https://www.tablesgenerator.com/html_tables)
 > table, thead, tbody, tfoot, tr, th, td, caption
 
 ```
