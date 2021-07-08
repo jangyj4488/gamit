@@ -100,7 +100,7 @@
 
 > url(Uniform Resource locator) : 이동하고자하는 목적지의 위치/경로 값
 
-### Table Element
+### Table Element(http://)
 > table, thead, tbody, tfoot, tr, th, td, caption
 
 ```
@@ -135,6 +135,42 @@
 > td(table data) : 데이터 칸(셀)
 > 
 > caption : 테이블의 제목,설명
+
+
+### Image element
+> img(image)
+> attribute : src(source), alt(alternative)
+
+```
+
+<img stc="image.jpg" alt="image">
+```
+
+> img 태그를 사용할 때 src, alt 속성은 반드시 사용해야 함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
