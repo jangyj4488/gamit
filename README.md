@@ -99,3 +99,55 @@
 > href : hyper text reference - 이동하고자 하는 목적이 위치/경로를 표시하는 속성
 
 > url(Uniform Resource locator) : 이동하고자하는 목적지의 위치/경로 값
+
+### Table Element
+> table, thead, tbody, tfoot, tr, th, td, caption
+
+```
+<table>
+  <caption></caption>
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+> table : table의 영역을 설정
+> thead, tbody, tfoot : table 데이터의 그룹을 표시
+> tr(table row) : 행
+> th(table head) : 제목 칸(셀)
+> td(table data) : 데이터 칸(셀)
+> caption : 테이블의 제목,설명
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
