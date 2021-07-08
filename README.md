@@ -96,6 +96,6 @@
 ```
 <a href="url">링크텍스트</a>
 ```
-href : hyper text reference - 이동하고자 하는 목적이 위치/경로를 표시하는 속성
+> href : hyper text reference - 이동하고자 하는 목적이 위치/경로를 표시하는 속성
 
-url(Uniform Resource locator) : 이동하고자하는 목적지의 위치/경로 값
+> url(Uniform Resource locator) : 이동하고자하는 목적지의 위치/경로 값
