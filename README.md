@@ -157,8 +157,29 @@
 >  - muted : 음소거
 >  - autoplay : 자동재생(항상 muted와 같이 사용)
 
+### 절대경로/상대경로
+> 절대경로 : 콘텐츠 파일을 불러오고자 하는 HTML 페이지가 어떤 위치에 있던 동일하게 찾아올수 있도록 자세하게 표시하는 경로 상대경로 : 콘텐츠 파일을 불러오고자 하는 HTML 페이지의 위치를 기준으로 콘텐츠 파일의 위치를 표시하는 경로
+
+> <img src="https://w3schools.com/images/picture.jpg">
+
+> <img src="images/picture.jpg">
+
+> <img src="../images/picture.jpg">
 
 
+### Block/Inline Element
+> 화면에 표시되는 형태에 기준으로 구분하는 방식
+
+> Block Element
+> - 화면에 줄바꿈되어 표시되는 요소
+
+> - 항상 사용가능한 전체 너비를 차지함
+
+> Inline Element
+
+> - 화면에 줄바꿈되지 않고 나란히 표시되는 요소
+
+> - 인라인요소에 포함된 콘텐츠의 너비만큼만 차지함
 
 
 
