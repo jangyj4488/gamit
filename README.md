@@ -189,6 +189,7 @@
 ### 폼 요소
 > input, button
 
+```
 > <input type="text">
 
 > <input type="password">
@@ -200,7 +201,7 @@
 > <button type="button">이름</button>
 > <button type="submit">이름</button>
 > <button type="reset">이름</button>
-
+```
 
 
 
