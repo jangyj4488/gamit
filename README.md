@@ -229,7 +229,40 @@
 h1 {color:red;font-size:10px;}
 ```
 
+### class, id
+> HTML element에 대해서 이름을 지정해줄 때 사용하는 attibute
 
+> class
+
+> - 여러개의 HTML element에 같은 클래스 이름을 사용할 수 있음
+
+> - 한 개의 HTML element에 여러개의 클래스 이름을 사용할 수 있음
+
+> id
+
+> - id 이름은 HTML 문서내에서 고유해야함(한 개만 존재)\
+
+> - 한 개의 HTML element에 한 개의 id 이름만 사용할 수 있음
+
+```
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+<div class="box box1 box2"></div>
+
+<div id="title1"></div>
+<div id="title2"></div>
+<div id="title3"></div>
+```
+
+### naming 표기방식
+> - naming을 할 때 한 단어로 naming을 하기에는 한계가 있기 때문에 여러 단어로 naming을 하게될 때, 단어와 단어 사이를 구분해야 하는데 일반 문서 작성처럼 띄어쓰기로 구분할 수 없기때문에 단어와 단어 사이를 기호나 규칙에 의해서 띄어쓰지 않고 구분할 수 있도혹 함 => 표기방식
+
+> 표기방식 종류
+
+> - snake case : gnb_list_item (underbar/underscore) => file/folder
+> - kebab case : gnb-list-item (hyphen/dash) => id/class
+> - camel case : gnbListItem => javascript 변수/함수 이름
+> - Pascal case : GnbListItem => javascript에서의 class 이름 지정
 
 
 
