@@ -224,7 +224,7 @@
 > CSS syntax
 > - selector(선택자)와 declaration block(선언블록)으로 구성됨
 > - 선언블록은 중괄호 안에 여러 선언을 포함
-각 선언에는 property와 value로 구성됨
+> - 각 선언에는 property와 value로 구성됨
 ```
 h1 {color:red;font-size:10px;}
 ```
