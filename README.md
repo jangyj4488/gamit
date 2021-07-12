@@ -218,10 +218,10 @@
 
 > CSS(Cascading Style Sheet)
 
-> cascading : 나중에 선언한것이 최종 반영되는 CSS 특징
-> CSS는 여러 대상에 대해서 공통으로 스타일을 적용시킬수 있음
-> CSS syntax
+> - cascading : 나중에 선언한것이 최종 반영되는 CSS 특징
+> - CSS는 여러 대상에 대해서 공통으로 스타일을 적용시킬수 있음
 
+> CSS syntax
 > - selector(선택자)와 declaration block(선언블록)으로 구성됨
 > - 선언블록은 중괄호 안에 여러 선언을 포함
 각 선언에는 property와 value로 구성됨
