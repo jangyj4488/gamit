@@ -281,8 +281,123 @@ h1 {color:red;font-size:10px;}
 > - 10진수 : (255, 100, 121) ※숫자범위 : 0~255
 
 
+### Text CSS
+> color
 
+> - value : #000000, rgb(0,0,0)(black), #ffffff, rgb(255,255,255)(white)
+> text-align : left, center, right, justify
 
+> text-decoration : underline, line-through, overline, none
+
+> text-indent : 50px(들여쓰기), -50px(내어쓰기)
+
+> letter-spacing : 3px, -3px
+
+> line-height : 24px, 1.6(배수표현)
+
+> word-spacing
+
+> white-space : nowrap(줄바꿈 비활성화)
+
+### Font CSS
+> font-family : 'Times New Roman', Times, serif;
+
+> - font fallback : 랜더링시 폰트를 찾지 못했을 때 다른 폰트를 사용하도록 하는 대비책
+> - web safe : 웹 페이지가 표시될 때 표시하고자 했던 폰트가 제대로 보일수 있도록 선택
+> - web font : 사용자 클라이언트에서 폰트를 찾는 것이 아니라 서버에서 폰트를 찾도록 하는 방식
+> - google font : 웹 폰트를 사용할 수 있도록 해주는 구글 폰트 서비스
+> - 눈누 : 한글 웹폰트 서비스
+> font-weight : normal(regular:400), bold(700)
+
+> font-size : 20px
+
+> font-style : italic
+
+### Box Model
+> HTML Element에는 기본적으로 영역이 존재하는데, 이 영역에 몇가지 CSS 요소를 적용할 수 있음.
+
+> - Content 영역 : width/height
+> - padding : 안쪽 여백
+> - border : 테두리
+> - margin : 바깥 여백
+### width/height
+> width : 가로길이/너비
+
+> - 기본 속성 : Block 요소는 부모요소에 맞춰지고, inline 요소는 자식요소에 맞춰짐
+> height : 세로길이/높이
+
+> - 기본 속성 : Block, Inline 모두 자식요소에 맞춰짐
+> 단위
+
+> - px : 지정된 수치값으로 고정
+> - % : 지정된 수치값이 부모요소를 기준으로 일정 비율 크기로 정해짐
+> - Block 요소의 경우 px, % 단위가 적용됨
+> - Inline 요소의 경우 px, % 단위 모두 적용되지 않음
+### padding
+> padding-top
+
+> padding-right
+
+> padding-bottom
+
+> padding-left
+
+> padding 축약표현
+```
+> padding:20px; : 모든 방향
+
+> padding:20px 30px; : top/bottom right/left
+
+> padding:20px 30px 40px : top right/left bottom
+
+> padding:10px 20px 30px 40px : top right bottom left
+```
+### margin
+> padding과 사용방법이 같음
+
+> margin 겹침
+
+> - 위아래 연이어 배치된 박스의 위/아래 margin이 겹쳐서 큰 수치의 margin만 표현되는 것
+### border
+> border
+
+> width, style, color
+
+> top, right, bottom, left
+```
+> border:1px solid #fff; Ex) #aa5500 => #a50
+
+> border-width:1px;
+> border-style:solid;
+> border-color:#fff;
+
+> border-top:1px solid #fff;
+> border-right:1px solid #fff;
+> border-bottom:1px solid #fff;
+> border-left:1px solid #fff;
+```
+### 박스 모델 크기 계산
+> width/height, padding, border, margin 모두 별개의 요소
+
+> Ex) 박스의 전체너비 : 300px, padding:20px 4방향, 테두리 1px 4방향, margin 30px 4방향
+```
+div{
+  padding:20px;
+  border:1px solid #fff;
+  margin:30px;
+  width:258px;
+}
+```
+> box-sizing:border-box;(기본값 : content-box)
+```
+div{
+  padding:20px;
+  border:1px solid #fff;
+  margin:30px;
+  width:300px;
+  box-sizing:border-box;
+}
+```
 
 
 
