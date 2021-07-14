@@ -365,16 +365,16 @@ h1 {color:red;font-size:10px;}
 
 > top, right, bottom, left
 ```
-> border:1px solid #fff; Ex) #aa5500 => #a50
+border:1px solid #fff; Ex) #aa5500 => #a50
 
-> border-width:1px;
-> border-style:solid;
-> border-color:#fff;
+border-width:1px;
+border-style:solid;
+border-color:#fff;
 
-> border-top:1px solid #fff;
-> border-right:1px solid #fff;
-> border-bottom:1px solid #fff;
-> border-left:1px solid #fff;
+border-top:1px solid #fff;
+border-right:1px solid #fff;
+border-bottom:1px solid #fff;
+border-left:1px solid #fff;
 ```
 ### 박스 모델 크기 계산
 > width/height, padding, border, margin 모두 별개의 요소
