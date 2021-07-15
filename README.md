@@ -400,9 +400,10 @@ div{
 ```
 
 ### Block, Inline에 박스모델 적용
-> Block : 박스모델의 모든 요소가 적용 가능 Inline : 박스모델의 width/height, 상하 margin 이 제대로 적용되지 않음
+> Block : 박스모델의 모든 요소가 적용 가능
+> Inline : 박스모델의 width/height, 상하 margin 이 제대로 적용되지 않음
 
-> display 속성
+### display 속성
 > 박스(영역)의 block, inilne 속성을 변형
 
 > display : inline => 박스 속성이 inline으로 변형
@@ -412,7 +413,155 @@ div{
 > dispaly : inline-block => 박스속성이 inline 요소 속성(가로길이가 자식요소에 맞춰짐), block 요소의 속성(박스 모델 적용 가능) 모두 가지고 있음
 
 
+### 가로 배치 방법
+> float
+> flex
+> grid
+### float
+> 박스를 부유시켜서 좌우배치를 할 수 있게 함 float:left, float:right 부모 요소의 왼쪽/오른쪽을 기준으로 배치,순서 적용
 
+> float으로 배치시 박스가 띄워지기 때문에 위아래 인접 관계 박스들의 레이아웃이 위로 올라감 float 박스의 하단 박스에 clear:both 를 적용하면 위로 올라가지 않음 float 박스는 계속 띄워져 있기 때문에 margin 적용 같은 문제가 발생할 수 있음
+
+> float 박스를 부모요소로 감싸주고 float박스 하단에 높이 0 짜리 박스를 추가해서 clear:both를 적용 float 박스와 위아래 인접관계에 있던 박스들은 float 박스의 부모요소와 인접관계가 되기 때문에 float과 상관없어짐
+```
+HTML
+<div class="float-parent">
+  <div class="float-box">Text</div>
+  <div class="clearfix"></div>
+</div>
+
+CSS
+.float-box{
+  float:left;
+}
+.clearfix{
+  clear:both;
+}
+```
+### 가상 클래스(Pseudo Class)
+> 선택자(요소)의 상태를 정의
+
+> 여러 요소중 특정 요소를 지정
+```
+상태 정의
+
+a:link{
+  color:red;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:green;
+}
+a:active{
+  color:yellow;
+}
+
+※ a 태그의 pseudo class는 위 순서와 동일하게 코딩
+
+
+특정 요소 지정
+
+p:first-child{
+  color:red;
+}
+p:last-child{
+  color:blue;
+}
+p:nth-child(3){
+  color:green;
+}
+p:nth-child(4n){
+  color:pink;
+}
+```
+### 가상 요소(Pseudo Element)
+> HTML에 직접 입력하는 것이 아닌 CSS에서 랜더링 시 생성되는 가상 요소
+```
+div::before{
+  content:"Hello World";
+}
+
+div::after{
+  content:"";
+  display:block;
+  width:100px;
+  height:30px;
+}
+```
+### 투명도
+> transparent : 투명한
+
+> - 투명색 적용 
+
+> alpha : 추가색
+
+> - rgba() 함수 사용 : color에만 투명도 적용
+> opacity : 불투명한
+
+> - Element(요소)에 투명도 적용
+```
+div{
+  background-color:transparent;
+}
+
+div{
+  opacity:0.7;(0.0 ~ 1.0)
+}
+
+div{
+  background-color:rgb(255,255,255); /* rgb() : rgb함수 */
+}
+
+div{
+  background-color:rgba(255,255,255,0.6); /* a : alpha (0.0 ~ 1.0) */
+}
+```
+### 배경이미지
+> background-image
+
+> - 배경이미지 표현
+> - 배경이미지가 반복되어 영역을 모두 채움(기본속성)
+
+> backgroud-repeat
+
+> - repeat-x : x 방향으로만 반복
+> - repeat-y : y 방향으로만 반복
+> - no-repeat : 반복 없음
+
+> background-position
+
+> - left, center, right
+> - top, center, bottom
+```
+div{
+  background-position:100px 200px; /* 앞:가로방향, 뒤:세로방향 */
+}
+```
+> background-attachment
+
+> - 배경 고정
+```
+div{
+  background-attachment:fixed;
+}
+```
+※ 배경색, 배경이미지 모두 content영역과 padding 영역에 적용됨(border, margin에는 적용이 안됨)
+
+### 이미지 표현 방법
+> 콘텐트로 표현
+
+> - img 태그로 표현
+> 디자인요소로 표현
+
+> - background로 표현
+> IR(Image Replacement) 기법
+
+> - 화면에 표시는 이미지로 표시, 실제 콘텐트는 텍스트의 형태
+> 가상요소를 사용해서 배경표현 기법
+
+> - 가상요소에 디자인 이미지를 적용해서 화면에 표시
 
 
 
