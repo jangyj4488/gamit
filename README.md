@@ -592,9 +592,9 @@ div{
 > 해상도 범위, 변경점(break point)
 
 > - 변경점의 기준 해상도
-> - > 모바일 : 360px ~ 480px(640px)
-> - > 태블릿 : 720px ~ 1024px
-> - > PC : 1024px ~
+> > - 모바일 : 360px ~ 480px(640px)
+> > - 태블릿 : 720px ~ 1024px
+> > - PC : 1024px ~
 ```
 닫힌 범위
 @media screen and (min-width:360px) and (max-width:480px){}
