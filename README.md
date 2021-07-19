@@ -654,9 +654,9 @@ car.drive();
 
 > - 이벤트에 따른 신호 발생
 
-> - - 이벤트 종류
-> - - - Javascript : onclick, onmouseover, onmouseout => click, mouseover, mouseout
-> - - - jQuery : click, mouseenter, mouseleave
+- - 이벤트 종류
+- - - Javascript : onclick, onmouseover, onmouseout => click, mouseover, mouseout
+- - - jQuery : click, mouseenter, mouseleave
 > - 발생된 신호를 감지해서 해당 기능 실행
 
 > - - object.onclick = 함수이름
