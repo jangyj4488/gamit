@@ -616,7 +616,7 @@ div{font-size:15px;}
 }
 ```
 
-#### Javascript
+## Javascript
 ---------------------------------------------------------------
 ### Object(객체)
 > JS Object는 Javascript가 동작, 기능할 때 필요한 대상
