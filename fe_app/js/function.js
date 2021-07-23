@@ -149,7 +149,7 @@ $(function(){
     function showMap(currentLatitude, currentLongitude){
         mapContainer = document.getElementById('map'), // 지도를 표시할 div
             mapOption = {
-            //33.450701, 126.570667
+                //33.450701, 126.570667
                 center: new kakao.maps.LatLng(currentLatitude, currentLongitude), // 지도의 중심좌표
                 level: 3 // 지도의 확대 레벨
             };
